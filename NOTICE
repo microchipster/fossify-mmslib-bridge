@@ -1,0 +1,34 @@
+SPDX-FileCopyrightText: 2026 microchipster
+SPDX-FileCopyrightText: 2013 Jacob Klinker
+SPDX-FileCopyrightText: 2007-2014 The Android Open Source Project
+
+SPDX-License-Identifier: Apache-2.0
+
+Fossify mmslib fork
+===================
+
+This repository is a fork of the Fossify mmslib library, which itself derives
+from android-smsmms by Jacob Klinker and from the Android Open Source Project
+(AOSP) `packages/apps/Mms` MMS stack. All of it is licensed under the Apache
+License, Version 2.0 (see LICENSE).
+
+Upstream projects and pinned fork commit
+----------------------------------------
+
+- FossifyOrg/android-smsmms (fork: FossifyOrg/mmslib), Apache-2.0.
+  This checkout is based on commit ebfbb30d616631eca86f9cd257f627bdb636c1c2.
+- klinker/android-smsmms by Jacob Klinker, Apache-2.0.
+- AOSP `packages/apps/Mms` and the `com.google.android.mms` /
+  `com.android.mms` packages, Apache-2.0, Copyright (C) 2007-2014 The Android
+  Open Source Project.
+
+Bundled third-party dependencies (declared in library/build.gradle.kts)
+-----------------------------------------------------------------------
+
+- com.klinkerapps:logger 1.0.3, Apache-2.0
+- com.squareup.okhttp:okhttp 2.5.0, Apache-2.0
+- com.squareup.okhttp:okhttp-urlconnection 2.5.0, Apache-2.0
+
+The vendored copies under `library/src/main/java/org/w3c/dom` and
+`library/src/main/java/org/xmlpull` originate from the AOSP MMS code base and
+keep their original Apache-2.0 headers.
