@@ -250,7 +250,7 @@ public class Transaction {
             final Parcelable sentMessageParcelable,
             final Parcelable deliveredParcelable
     ) throws Exception {
-        Log.v("send_transaction", "message text: " + text);
+        Log.v("send_transaction", "message length: " + text.length());
         if (saveMessage) {
             // save the message for each of the addresses
             for (String address : addresses) {
